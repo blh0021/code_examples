@@ -41,3 +41,10 @@ arr=build_table
 puts "Can fractions of 19 make a perfect square? : "
 puts "Rows & Cols: #{validate(arr)}"
 puts "Diagonals  : #{validate_diags(arr)}"
+puts
+puts "Decimal places of fractions of 19"
+ct=1
+arr.each do |r|
+  puts "#{'%2d' % ct}/19 :   #{r.join(" ")}"
+  ct+=1
+end
